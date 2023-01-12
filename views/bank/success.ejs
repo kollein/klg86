@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Thanh toán thành công</title>
+	<!--http://www.html5rocks.com/en/mobile/mobifying/-->
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1"/>
+
+	<!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="format-detection" content="telephone=no">
+
+	<!-- force webkit on 360 -->
+	<meta name="renderer" content="webkit"/>
+	<meta name="force-rendering" content="webkit"/>
+	<!-- force edge on IE -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="msapplication-tap-highlight" content="no">
+
+	<!-- force full screen on some browser -->
+	<meta name="full-screen" content="yes"/>
+	<meta name="x5-fullscreen" content="true"/>
+	<meta name="360-fullscreen" content="true"/>
+	
+	<!-- force screen orientation on some browser -->
+	<meta name="screen-orientation" content=""/>
+	<meta name="x5-orientation" content="">
+
+	<!--fix fireball/issues/3568 -->
+	<!--<meta name="browsermode" content="application">-->
+	<meta name="x5-page-mode" content="app">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+	<style type="text/css">
+*, *::after, *::before {
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+::-moz-selection {
+  background:#db653a;
+  color:#fff;
+}
+::selection {
+  background:#db653a;
+  color:#fff;
+}
+
+html, body {
+  background-color: #f0f0f0;
+  color: #757575;
+  font-weight:400;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+html,
+body,
+input,
+select,
+textarea {
+  font-family: Helvetica, Arial, "Liberation Sans", sans-serif;
+  font-size: 15px;
+}
+@media (max-width: 700px) {
+  html,
+  body,
+  input,
+  select,
+  textarea {
+    font-family: Helvetica, Arial, "Liberation Sans", sans-serif;
+    font-size: 16px;
+  }
+}
+
+
+.dialog {
+   color: #333;
+   padding: 1em;
+   margin: 0 auto;
+   background: white;
+   border: none;
+   box-shadow: 0 9px 46px 8px rgba(0, 0, 0, 0.14), 0 11px 15px -7px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.2);
+   max-width: 660px;
+  }
+  .dialog__title {
+  	color:red;
+    text-align: center;
+    padding: 24px 24px 0;
+    margin: 0;
+    font-size: 2rem; }
+  .dialog__actions {
+    padding: 8px 8px 8px 24px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .dialog__actions > * {
+      margin-right: 8px;
+      height: 36px; }
+      .dialog__actions > *:first-child {
+        margin-right: 0; }
+    .dialog__actions--full-width {
+      padding: 0 0 8px 0; }
+      .dialog__actions--full-width > * {
+        height: 48px;
+        -webkit-flex: 0 0 100%;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+        padding-right: 16px;
+        margin-right: 0;
+        text-align: right; }
+  .dialog__content {
+  	text-align: center;
+    padding: 20px 24px 24px 24px;
+    }
+</style>
+</head>
+<body>
+	<div class="dialog">
+		<div class="dialog__title">RVIP.CLUB</div>
+		<div class="dialog__title" style="color: #00776c;">
+			Thanh toán thành công.
+		</div><br/>
+		<div class="dialog__content" style="font-weight: bold; font-size: 2rem !important; color:#E91E63"><%= nap %></div>
+		<div class="dialog__actions">
+			Cảm ơn bạn đã đồng hành cùng chúng tôi, chúc bạn chơi lớn thắng lớn, chúc bạn một ngày tuyệt vời, một ngày thắng lớn. <strong>RVIP.FUN</strong> 
+		</div>
+		<div class="dialog__content" style="padding: 5px">
+			<strong>Uy Tín - Bảo Mật - Nhanh Chóng</strong>
+		</div>
+	</div>
+</body>
+</html>

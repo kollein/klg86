@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>MD5CLUB - Tải về cho Android</title>
+    <style type="text/css">
+    	body{
+    		margin: 0 0 0 0;
+    	}
+		.smallnav {
+			position: relative;
+			float: right;
+			width: 160px;
+			z-index: 1;
+		}
+    	#root{
+    		background: url('/images/bg.jpg') no-repeat center center; 
+    		width: 100%;
+    		min-height: 100vh;
+    		max-height: 100vh;
+    		text-align: center;
+    		background-size: cover;
+    	}
+    	#root .logo-wrapper{
+    		width: 150px;
+    		margin: 0 auto;
+    		text-align: center;
+    		z-index: 99;
+    		position: relative;
+    	}
+    	#root .logo-wrapper .logo-img{
+    		width: 100px;
+    		float: left;
+    	}
+    	#root .logo-wrapper .logo-img img{
+    		width: 100%;
+    	}
+    	#root .logo-wrapper .fanpage{
+    		width: 80px;
+    		float: left;
+    	}
+    	#root .logo-wrapper .fanpage img{
+    		width: 100%;
+    	}
+    	#root .logo-wrapper .group{
+    		width: 80px;
+    		float: left;
+    	}
+    	#root .logo-wrapper .group img{
+    		width: 100%;
+    	}
+    	#root .logo-wrapper .fanpage a{
+    	}
+    	#root .logo-wrapper .group a{
+    	}
+    	#root .background-2{
+    		width: 100%;
+    		z-index: 98;
+    	}
+    	#root .background-2 img{
+    		margin: 20px auto;
+    		width: 100%;
+    	}
+    	#root .title {
+			width: 100%;
+			text-align:center;
+    	}
+    	#root .title img{
+    		/*width: 50%;*/
+    		margin: -270 auto 0px;
+    	}
+    	#root .download-top{
+    		width: 162px;
+    		margin: 0 auto -150px;
+    		z-index: 98;
+    		position: relative;
+    	}
+    	#root .download-top a{
+    		float: left;
+    		display: block;
+    		margin-top: 20px;
+    	}
+    	#root .download-top img{
+    		padding: 5px;
+    	}
+    	#root .download-top-mobile{
+    		display: none;
+    		z-index: 98;
+    	}
+    	#root .download-top-mobile a{
+    		display: block;
+    	}
+    	#root .download-top-mobile table{
+    		margin: 0 auto;
+    	}
+    	#root .download-top img{
+    		width: 150px;
+    	}
+    	#root .download-bottom img{
+    		margin: -50px 0 0 0;
+    	}
+		@media only screen and (min-width: 1366px){
+    		#root .logo-wrapper .logo-img{
+	    		width: 150px;
+	    		margin: 30px 0 0 0;
+	    	}
+    		#root .logo-wrapper .fanpage{
+	    		width: 150px;
+	    	}
+	    	#root .logo-wrapper .group{
+	    		width: 150px;
+	    	}
+    		#root .logo-wrapper .fanpage img{
+	    		margin: 70px 0 0 -30px;
+	    	}
+	    	#root .logo-wrapper .group img{
+	    		margin: 70px -30px 0 0;
+	    	}
+		}
+    	@media only screen and (max-width: 1366px){
+    		#root .logo-wrapper .logo-img{
+	    		width: 150px;
+	    		margin: 30px 0 0 0;
+	    	}
+    		#root .logo-wrapper .fanpage{
+	    		width: 150px;
+	    	}
+	    	#root .logo-wrapper .group{
+	    		width: 150px;
+	    	}
+    		#root .logo-wrapper .fanpage img{
+	    		margin: 70px 0 0 -30px;
+	    	}
+	    	#root .logo-wrapper .group img{
+	    		margin: 70px -30px 0 0;
+	    	}
+		}
+		@media only screen and (max-width: 1024px){
+    		#root .logo-wrapper .fanpage img{
+	    		margin: 70px 0 0 -20px;
+	    	}
+	    	#root .logo-wrapper .group img{
+	    		margin: 70px -20px 0 0;
+	    	}
+	    	#root .title {
+	    		display: none;
+	    	}
+	    	#root .title-mobile {
+	    		width: 100%;
+	    		margin: -180px 0 0 0;
+	    		display: block;
+	    	}
+	    	
+	    	#root .download-top-mobile{
+	    		display: block;
+	    	}
+	    	#root .download-bottom img{
+	    		margin: -30px 0 0 0;
+	    	}
+		}
+		@media only screen and (max-width: 500px){
+	    	#root .logo-wrapper{
+	    		width: 80px;
+	    	}
+			#root .logo-wrapper .logo-img{
+	    		margin: 30px 0 30px 0;
+	    		width: 80px;
+	    	}
+	    	#root .download-top a{
+	    		margin-top: -20px;
+	    	}
+    		#root .logo-wrapper .fanpage{
+	    		width: 80px;
+	    	}
+	    	#root .logo-wrapper .group{
+	    		width: 80px;
+	    	}
+	    	#root .logo-wrapper .fanpage img{
+	    		margin: 35px 0 0 -20px;
+	    	}
+	    	#root .logo-wrapper .group img{
+	    		margin: 35px -20px 0 0;
+	    	}
+	    	#root .title {
+	    		display: none;
+	    	}
+	    	#root .title-mobile {
+	    		width: 100%;
+	    		margin: -150px 0 0 0;
+	    		display: block;
+	    	}
+	    	
+	    	#root .download-top-mobile{
+	    		margin: 0 auto -150px;
+	    		display: block;
+	    	}
+	    	#root .download-top-mobile img{
+	    		width: 150px;
+	    		padding: 5px;
+	    	}
+	    	#root .download-bottom img{
+	    		margin: 30px 0 0 0;
+	    		width: 40%;
+	    	}
+		}
+		/*ipad pro*/
+		@media only screen and (device-height: 1366px){
+	    	#root .logo-wrapper{
+	    		width: 600px;
+	    	}
+	    	#root .logo-wrapper .logo-img{
+	    		margin: 20px 0 30px 0;
+	    		width: 200px;
+	    	}
+    		#root .logo-wrapper .fanpage{
+	    		width: 200px;
+	    	}
+	    	#root .logo-wrapper .group{
+	    		width: 200px;
+	    	}
+	    	#root .logo-wrapper .fanpage img{
+	    		margin: 90px 0 0 -40px;
+	    	}
+	    	#root .logo-wrapper .group img{
+	    		margin: 90px -40px 0 0;
+	    	}
+	    	#root .background-2{
+	    		background: url('/images/bg-mobile-2.png') no-repeat center center; 
+	    		width: 100%;
+	    		text-align: center;
+	    		background-size: cover;
+	    	}
+	    	#root .title {
+	    		display: none;
+	    	}
+	    	#root .title-mobile {
+	    		width: 100%;
+	    		margin: -170px 0 0 0;
+	    		display: block;
+	    	}
+	    	
+	    	#root .download-top-mobile{
+	    		margin: 0 auto -150px;
+	    		display: block;
+	    	}
+	    	#root .download-top-mobile img{
+	    		padding: 5px;
+	    	}
+	    	#root .download-bottom img{
+	    		margin: 30px 0 0 0;
+	    	}
+		}
+		/*ipad*/
+		@media only screen and (device-height: 1024px){
+	    	#root .logo-wrapper{
+	    		width: 150px;
+	    	}
+	    	#root .logo-wrapper .logo-img{
+	    		margin: 20px 0 20px 0;
+	    		width: 150px;
+	    	}
+    		#root .logo-wrapper .fanpage{
+	    		width: 150px;
+	    	}
+	    	#root .logo-wrapper .group{
+	    		width: 150px;
+	    	}
+	    	#root .logo-wrapper .fanpage img{
+	    		margin: 70px 0 0 -40px;
+	    	}
+	    	#root .logo-wrapper .group img{
+	    		margin: 70px -40px 0 0;
+	    	}
+	    	#root .title {
+	    		display: none;
+	    	}
+	    	#root .title-mobile {
+	    		width: 100%;
+	    		margin: -170px 0 0 0;
+	    		display: block;
+	    	}
+	    	
+	    	#root .download-top-mobile{
+	    		margin: 0 auto -150px;
+	    		display: block;
+	    	}
+	    	#root .download-top-mobile img{
+	    		width: 200px;
+	    		padding: 5px;
+	    	}
+	    	#root .download-bottom img{
+	    		margin: 10px 0 0 0;
+	    	}
+		}	
+		/*iphone X*/
+		@media only screen and (device-height: 812px){
+	    	#root .logo-wrapper{
+	    		width: 80px;
+	    	}
+			#root .logo-wrapper .logo-img{
+	    		margin: 10px 0 30px 0;
+	    		width: 80px;
+	    	}
+    		#root .logo-wrapper .fanpage{
+	    		width: 80px;
+	    	}
+	    	#root .logo-wrapper .group{
+	    		width: 80px;
+	    	}
+	    	#root .logo-wrapper .fanpage img{
+	    		margin: 35px 0 0 -20px;
+	    	}
+	    	#root .logo-wrapper .group img{
+	    		margin: 35px -20px 0 0;
+	    	}
+	    	#root .title {
+	    		display: none;
+	    	}
+	    	#root .title-mobile {
+	    		width: 100%;
+	    		margin: -150px 0 0 0;
+	    		display: block;
+	    	}
+	    	
+	    	#root .download-top-mobile{
+	    		margin: 0 auto -150px;
+	    		display: block;
+	    	}
+	    	#root .download-top-mobile img{
+	    		width: 150px;
+	    		padding: 5px;
+	    	}
+	    	#root .download-bottom img{
+	    		margin: 30px 0 0 0;
+	    		width: 40%;
+	    	}
+
+		}
+		/*iphone 6/7/8 plus*/
+		@media only screen and (device-height: 736px){
+	    	#root .logo-wrapper{
+	    		width: 240px;
+	    	}
+    		#root .logo-wrapper .logo-img{
+	    		margin: 10px 0 20px 0;
+	    		width: 80px;
+	    	}
+    		#root .logo-wrapper .fanpage{
+	    		width: 80px;
+	    	}
+	    	#root .logo-wrapper .group{
+	    		width: 80px;
+	    	}
+	    	#root .logo-wrapper .fanpage img{
+	    		margin: 35px 0 0 -20px;
+	    	}
+	    	#root .logo-wrapper .group img{
+	    		margin: 35px -20px 0 0;
+	    	}
+	    	#root .title {
+	    		display: none;
+	    	}
+	    	#root .title-mobile {
+	    		width: 100%;
+	    		margin: -150px 0 0 0;
+	    		display: block;
+	    	}
+	    	
+	    	#root .download-top-mobile{
+	    		margin: 0 auto -150px;
+	    		display: block;
+	    	}
+	    	#root .download-top-mobile img{
+	    		width: 150px;
+	    		padding: 5px;
+	    	}
+	    	#root .download-bottom img{
+	    		margin: 30px 0 0 0;
+	    		width: 40%;
+	    	}
+		}
+		/*iphone 6/7/8*/	
+		@media only screen and (device-height: 667px){
+	    	#root .logo-wrapper{
+	    		width: 240px;
+	    	}
+    		#root .logo-wrapper .logo-img{
+	    		margin: 10px 0 20px 0;
+	    		width: 80px;
+	    	}
+    		#root .logo-wrapper .fanpage{
+	    		width: 80px;
+	    	}
+	    	#root .logo-wrapper .group{
+	    		width: 80px;
+	    	}
+	    	#root .logo-wrapper .fanpage img{
+	    		margin: 35px 0 0 -20px;
+	    	}
+	    	#root .logo-wrapper .group img{
+	    		margin: 35px -20px 0 0;
+	    	}
+	    	#root .title {
+	    		display: none;
+	    	}
+	    	#root .title-mobile {
+	    		width: 100%;
+	    		margin: -150px 0 0 0;
+	    		display: block;
+	    	}
+	    	
+	    	#root .download-top-mobile{
+	    		margin: 0 auto -150px;
+	    		display: block;
+	    	}
+	    	#root .download-top-mobile img{
+	    		width: 140px;
+	    		padding: 5px;
+	    	}
+	    	#root .download-bottom img{
+	    		margin: 10px 0 0 0;
+	    		width: 40%;
+	    	}
+		}
+		/*iphone 5/se*/
+		@media only screen and (device-height: 568px){
+	    	#root .logo-wrapper{
+	    		width: 240px;
+	    	}
+    		#root .logo-wrapper .logo-img{
+	    		margin: 10px 0 20px 0;
+	    		width: 80px;
+	    	}
+    		#root .logo-wrapper .fanpage{
+	    		width: 80px;
+	    	}
+	    	#root .logo-wrapper .group{
+	    		width: 80px;
+	    	}
+	    	#root .logo-wrapper .fanpage img{
+	    		margin: 35px 0 0 -20px;
+	    	}
+	    	#root .logo-wrapper .group img{
+	    		margin: 35px -20px 0 0;
+	    	}
+	    	#root .title {
+	    		display: none;
+	    	}
+	    	#root .title-mobile {
+	    		width: 100%;
+	    		margin: -150px 0 0 0;
+	    		display: block;
+	    	}
+	    	
+	    	#root .download-top-mobile{
+	    		margin: 0 auto -150px;
+	    		display: block;
+	    	}
+	    	#root .download-top-mobile img{
+	    		width: 130px;
+	    		padding: 5px;
+	    	}
+	    	#root .download-bottom img{
+	    		margin: 10px 0 0 0;
+	    		width: 40%;
+	    	}
+		}	
+    </style>
+<!-- End Facebook Pixel Code -->
+  </head>
+  <body>
+    <div id="root">
+    	<div class="logo-wrapper">
+    		
+    		<div class="logo-img">
+    			<img src="/images/icon.png">
+    		</div>
+    		
+    	</div>
+
+    	<div class="download-top">
+	    	<table>
+    			<tbody>
+    				<tr>
+    					<td><a href="/download/rvip.apk"><img src="/images/btnAndroid.png"></a></td>
+    				</tr>
+    			</tbody>
+    		</table>
+    	</div>
+    	<div class="background-2">
+    		<img src="/images/bg-2.png">
+    	</div>
+    </div>
+</body></html>
