@@ -74,3 +74,19 @@ sudo a2enmod proxy && sudo a2enmod proxy_http && sudo service apache2 restart
 ```
 
 ### SSL: https://github.com/kollein/payment-backend#install-lets-encrypt-ssl
+
+## Config
+### App
+Open:
+```
+public/web/src/project.js
+public/admin/src/project.js
+```
+Find: 
+```
+this.connect("127.0.0.1",
+```
+Change to:
+```
+this.connect("klg86.com:3000",
+```
