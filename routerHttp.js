@@ -6,22 +6,28 @@ module.exports = function(app, redT) {
 	// Home
 	app.get('/', function(req, res) {
 		if (mobile({ua:req})){
+			console.log('/ > mobile');
 			return res.redirect('/mobile/');
 		} else {
-			return res.redirect('/playgame/');
+			console.log('/ > else');
+			return res.redirect('/web/');
 		}
 	});
 	app.get('/playgame/', function(req, res) {
 		if (mobile({ua:req})){
+			console.log('/playgame > mobile');
 			return res.redirect('/mobile/');
 		} else {
+			console.log('/playgame > else');
 			return res.render('index');
 		}
 	});
 	app.get('/playgame/', function(req, res) {
 		if (mobile({ua:req})){
+			console.log('/playgame 2 > mobile');
 			return res.render('index_mobile');
 		} else {
+			console.log('/playgame 2 > else');
 			return res.redirect('/playgame/');
 		}
 	});
