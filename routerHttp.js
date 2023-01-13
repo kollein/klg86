@@ -7,7 +7,7 @@ module.exports = function(app, redT) {
 	app.get('/', function(req, res) {
 		if (mobile({ua:req})){
 			console.log('/ > mobile');
-			return res.redirect('/mobile/');
+			return res.redirect('/web/');
 		} else {
 			console.log('/ > else');
 			return res.redirect('/web/');
