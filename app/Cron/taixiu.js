@@ -352,16 +352,15 @@ let thongtin_thanhtoan = function (game_id, dice = false) {
 									if (TaiXiu_tong_red_lech >= obj.bet) {
 										console.log('Trả lại hoàn toàn');
 										// Trả lại hoàn toàn
+										const totalWinAmount = win ? (obj.bet * rate) + obj.bet : 0;
 										TaiXiu_tong_red_lech -= obj.bet
 										// trả lại hoàn toàn
 										obj.thanhtoan = true;
 										obj.win = win;
-										obj.tralai = obj.bet;
+										obj.tralai = totalWinAmount;
 										console.log('⚽ ~ obj after:', obj);
 										obj.save();
 
-										const totalWinAmount = win ? (obj.bet * rate) + obj.bet : 0;
-										const winAmount = totalWinAmount - obj.bet;
 
 										!obj.bot && UserInfo.updateOne({ id: obj.uid }, { $inc: { red: totalWinAmount } }).exec();
 										LScuoc.updateOne({ uid: obj.uid, phien: game_id }, { $set: { win: totalWinAmount, thanhtoan: 1 }, $inc: { tralai: totalWinAmount, tienhienco: obj.bet } }).exec();
@@ -484,16 +483,15 @@ let thongtin_thanhtoan = function (game_id, dice = false) {
 									if (TaiXiu_tong_red_lech >= obj.bet) {
 										console.log('Trả lại hoàn toàn #2');
 										// Trả lại hoàn toàn
+										const totalWinAmount = win ? (obj.bet * rate) + obj.bet : 0;
 										TaiXiu_tong_red_lech -= obj.bet
 										// trả lại hoàn toàn
 										obj.thanhtoan = true;
 										obj.win = win;
-										obj.tralai = obj.bet;
+										obj.tralai = totalWinAmount;
 										console.log('⚽ ~ obj after #4:', obj);
 										obj.save();
 
-										const totalWinAmount = win ? (obj.bet * rate) + obj.bet : 0;
-										const winAmount = totalWinAmount - obj.bet;
 
 										!obj.bot && UserInfo.updateOne({ id: obj.uid }, { $inc: { red: totalWinAmount } }).exec();
 										LScuoc.updateOne({ uid: obj.uid, phien: game_id }, { $set: { win: totalWinAmount, thanhtoan: 1 }, $inc: { tralai: totalWinAmount, tienhienco: obj.bet } }).exec();
