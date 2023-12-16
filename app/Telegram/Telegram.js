@@ -8,9 +8,9 @@ let helpers  = require('../Helpers/Helpers');
 var UserInfo  = require('../Models/UserInfo');
 
 module.exports = function(redT) {
-	redT.telegram.on('message', (msg) => {
-		messages(redT, msg);
-	});
+	// redT.telegram.on('message', (msg) => {
+	// 	messages(redT, msg);
+	// });
 	/*
 	redT.telegram_daily.on('message',(msg)=>{
 		

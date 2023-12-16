@@ -1,9 +1,9 @@
 ﻿
 require('dotenv').config();
 var cors = require('cors');
-let Telegram      = require('node-telegram-bot-api');
-let TelegramToken = '5180271425:AAFGUtqkl4_laRpVksB4YTCswsx63sLBDew';
-let TelegramBot   = new Telegram(TelegramToken, {polling: true});
+// let Telegram      = require('node-telegram-bot-api');
+// let TelegramToken = '5180271425:AAFGUtqkl4_laRpVksB4YTCswsx63sLBDew';
+// let TelegramBot   = new Telegram(TelegramToken, {polling: true});
 let fs 			  = require('fs');
 //let https     	  = require('https')
 //let privateKey    = fs.readFileSync('./ssl/b86club.key', 'utf8');
@@ -40,7 +40,7 @@ app.use(express.static('public'));
 // server socket
 let redT = expressWs.getWss();
 process.redT = redT;
-redT.telegram = TelegramBot;
+// redT.telegram = TelegramBot;
 global['redT'] = redT;
 global['userOnline'] = 0;
 require('./app/Helpers/socketUser')(redT); // Add function socket
