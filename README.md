@@ -24,6 +24,10 @@ nvm install v12.22.12
 ```
 
 ## MongoDB
+### Local with docker
+```
+docker run -d -p 27017:27017 --name example-mongo mongo:latest
+```
 https://www.digitalocean.com/community/tutorials/how-to-install-mongodb-on-ubuntu-20-04
 ### download
 ```
